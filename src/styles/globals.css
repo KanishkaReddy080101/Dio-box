@@ -1,0 +1,3 @@
+.event-title, .event-date, .event-guests {
+    text-decoration: none !important;
+}

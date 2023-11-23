@@ -5,10 +5,10 @@ import SideBar from "./components/sideBar";
 
 function billing() {
   return (
-    <div className="d-flex">
-      <SideBar />
-      <div className="container p-5 mx-5">
-        <h1 className="mb-5">Plan</h1>
+<div className="d-flex" style={{ height: '100vh', overflow: 'hidden' }}>
+        <SideBar />
+        <div className="p-5 mx-5 overflow-auto" style={{ flex: 1 }}>
+                  <h1 className="mb-5">Plan</h1>
         <br />
         <p>Corporate Subscription Plan</p>
         <br />

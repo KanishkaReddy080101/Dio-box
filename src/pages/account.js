@@ -2,9 +2,9 @@ import SideBar from "./components/sideBar";
 
 export default function Account() {
     return(
-        <div className="d-flex">
+        <div className="d-flex" style={{ height: '100vh', overflow: 'hidden' }}>
       <SideBar />
-      <div className="p-5 mx-5">
+      <div className="p-5 mx-5 overflow-auto" style={{ flex: 1 }}>
         <h2 className="mb-5">Account Settings</h2>
         <form className="border rounded-4 container-fluid p-0 mb-5">
           <div className="p-3">
@@ -50,9 +50,10 @@ export default function Account() {
                 <strong>Logo</strong>
               </label>
               <div className="col-md-9">
-                <div className="d-flex">
+                <div className="d-flex align-items-center">
+                  <img style={{width: '10rem', height: '10rem'}} src="/Color_DP.png"/>
                   <div className="me-3">
-                    <button type="button" class="btn btn-outline-primary disabled">
+                    <button type="button" class="btn btn-outline-primary disabled m-3">
                       Upload
                     </button>
                   </div>

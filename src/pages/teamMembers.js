@@ -8,9 +8,9 @@ function teamMembers() {
   const [remaining, setRemainig] = useState("12");
   const addMembers = () => {};
   return (
-    <div className="d-flex">
+<div className="d-flex" style={{ height: '100vh', overflow: 'hidden' }}>
       <SideBar />
-      <div className="p-5 mx-5 container">
+      <div className="p-5 mx-5 overflow-auto" style={{ flex: 1 }}>
         <div className="container ">
           <div className="d-flex justify-content-between">
             <h2 className="">Team Members</h2>
@@ -78,7 +78,7 @@ function teamMembers() {
                 <div className="col-md-4">
                   <div className="d-flex justify-content-between">
                     <p>July 10, 2022</p>
-                    <div className="d-flex">
+                    <div className="d-flex align-items-center">
                       <div className="me-3">
                         <button type="button" class="btn btn-outline-primary">
                           Edit
@@ -119,7 +119,7 @@ function teamMembers() {
                 <div className="col-md-4">
                   <div className="d-flex justify-content-between">
                     <p>July 10, 2022</p>
-                    <div className="d-flex">
+                    <div className="d-flex align-items-center">
                       <div className="me-3">
                         <button type="button" class="btn btn-outline-primary">
                           Edit

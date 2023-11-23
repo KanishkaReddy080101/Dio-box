@@ -98,7 +98,7 @@ function SideBarInternal() {
         {/* <div>{wearenocturnal_dropdown_item}</div> */}
         <div className="mb-4 border-top border-white">
             <div className="px-2 mt-3 py-3 d-flex bg-black border-start border-info">
-                <Image src = "" alt = "logo"/>
+            <Image src="/login-bg-fe1235a9.jpg" alt="logo" width={40} height={40} />
                 <p className="text-white mx-2" >The Yellow Diary, at <br/> Artistry, Hyderabad</p>
             </div>
           <Link

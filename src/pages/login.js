@@ -80,11 +80,25 @@ const LoginPage = () => {
             <h2 className='mb-5'>Sign In</h2>
             <form style={{ display: 'flex', flexDirection: "column", justifyContent: 'space-between', gap: "1.8rem" }}>
               <div className="form-group">
-                <input type="text" className="form-control" placeholder="Username" name="username" value={loginData.username} onChange={handleLoginChange} />
-              </div>
-              <div className="form-group">
-                <input type="password" className="form-control" placeholder="Password" name="password" value={loginData.password} onChange={handleLoginChange} />
-              </div>
+    <input
+      type="text"
+      className="form-control border-0 border-bottom"
+      placeholder="Email"
+      name="username"
+      value={loginData.username}
+      onChange={handleLoginChange}
+    />
+  </div>
+  <div className="form-group">
+    <input
+      type="password"
+      className="form-control border-0 border-bottom"
+      placeholder="Password"
+      name="password"
+      value={loginData.password}
+      onChange={handleLoginChange}
+    />
+  </div>
               <Link href='/events'>
               <button type="submit" className={`btn btn-primary btn-lg mt-3 mb-0 ${loginData.username && loginData.password ? "" : "disabled"}`}>Login</button>
               </Link>
@@ -107,18 +121,18 @@ const LoginPage = () => {
             <h2 className='mb-5'>Welcome</h2>
             <form style={{ display: 'flex', flexDirection: "column", justifyContent: 'space-between', gap: "1.8rem" }}>
               <div className="form-group">
-                <input type="text" className="form-control" placeholder="Work Email Address" name="email" value={signupData.email} onChange={handleSignupChange} />
+                <input type="text" className="form-control border-0 border-bottom" placeholder="Work Email Address" name="email" value={signupData.email} onChange={handleSignupChange} />
               </div>
               <div className="form-group d-flex">
-                <input type="text" className="form-control" placeholder="First name" name="firstName" value={signupData.firstName} onChange={handleSignupChange} />
-                <input type="text" className="form-control" placeholder="Last name" name="lastName" value={signupData.lastName} onChange={handleSignupChange} />
+                <input type="text" className="form-control border-0 border-bottom" placeholder="First name" name="firstName" value={signupData.firstName} onChange={handleSignupChange} />
+                <input type="text" className="form-control border-0 border-bottom" placeholder="Last name" name="lastName" value={signupData.lastName} onChange={handleSignupChange} />
               </div>
               <div className="form-group">
-                <input type="text" className="form-control" placeholder="Organization" name="organization" value={signupData.organization} onChange={handleSignupChange} />
+                <input type="text" className="form-control border-0 border-bottom" placeholder="Organization" name="organization" value={signupData.organization} onChange={handleSignupChange} />
                 <p>Appears in menus and event headings</p>
               </div>
               <div className="form-group">
-                <input type="password" className="form-control" placeholder="Password" name="password" value={signupData.password} onChange={handleSignupChange} />
+                <input type="password" className="form-control border-0 border-bottom" placeholder="Password" name="password" value={signupData.password} onChange={handleSignupChange} />
                 <p>Must contain at least 6 characters</p>
               </div>
               <button type="submit" className={`btn btn-primary btn-lg mt-3 mb-0 ${Object.values(signupData).every(value => value) ? "" : "disabled"}`}>Sign Up Free</button>

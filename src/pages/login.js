@@ -45,7 +45,7 @@ const LoginPage = () => {
     <img src="/login-bg-fe1235a9.jpg" style={{ objectFit: 'cover' }} alt="Image" className="img-fluid h-100" />
     <div className="position-absolute top-50 start-50 translate-middle h-100 w-100 p-5 d-flex flex-column justify-content-between">
       {/* Add your logos and content here */}
-      <img src="/diobox-logo-af3f776a.svg" alt="Logo" className="img-fluid" style={{width:'10rem'}} />
+      <img src="/Color_Dp.png" alt="Logo" className="img-fluid" style={{width:'5rem'}} />
         <div>
             <div className='text-light'>The most advanced platform for managing events and guests.</div>
             <div>

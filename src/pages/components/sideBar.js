@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import { Nav, NavDropdown } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
+import { FaCalendar } from "react-icons/fa"
+import { IoMdSettings } from "react-icons/io";
+import { CiUser } from "react-icons/ci";
+import { GoArrowSwitch } from "react-icons/go";
+import { CiBellOn } from "react-icons/ci";
+import { CiCircleQuestion } from "react-icons/ci";
+import { FiMessageSquare } from "react-icons/fi";
+import { LiaSignOutAltSolid } from "react-icons/lia";
+import { CiCircleChevRight } from "react-icons/ci";
+import { IoTimeOutline } from "react-icons/io5";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import SettingsIcon from '@mui/icons-material/Settings';
 import PlayCircleOutlineOutlinedIcon from '@mui/icons-material/PlayCircleOutlineOutlined';
@@ -27,40 +37,40 @@ const SideBar = () => {
               </div>
               <div className="d-flex flex-column text-black">
                 <Link href = "/events" className="mb-4 text-decoration-none text-black">
-                  {/* Icon */}
+                  <FaCalendar className="me-2"/>
                   Events
                 </Link>
                 <Link href = "/account" className="text-decoration-none text-black">
-                  {/* Icon */}
+                  <IoMdSettings className="me-2"/>
                   Account
                 </Link>
               </div>
             </div>
             <div className="border-top p-3">
             <div className="d-flex justify-content-center" >
-            <Image src="/Color_DP.png" alt="logo" width={30} height={30} />
+            <CiUser width={30} height={30} />
               </div>
               <h3 className="text-center">WeAreNocturnal</h3>
               <p className="text-center mb-4">events@wearenocturnal.com</p>
               <div className="d-flex flex-column">
                 <Link href = "/" className="mb-4 text-decoration-none text-black">
-                  {/* Icon */}
+                  <GoArrowSwitch className="me-2"/>
                   Switch Account
                 </Link>
                 <Link href = "/" className="mb-4 text-decoration-none text-black">
-                  {/* Icon */}
+                  <CiBellOn className="me-2"/>
                   What's New
                 </Link>
                 <Link href = "/" className="mb-4 text-decoration-none text-black">
-                  {/* Icon */}
+                  <CiCircleQuestion className="me-2"/>
                   Help Center
                 </Link>
                 <Link href = "/" className="mb-4 text-decoration-none text-black">
-                  {/* Icon */}
+                  <FiMessageSquare className="me-2"/>
                   Message Us
                 </Link>
                 <Link href = "/" className="text-decoration-none text-black">
-                  {/* Icon */}
+                  <LiaSignOutAltSolid className="me-2"/>
                   Sign Out
                 </Link>
               </div>
@@ -81,9 +91,11 @@ const SideBar = () => {
   const events_content = (
     <div className="d-flex flex-column mb-3">
       <Link href="/upcomingEvents" className="text-white text-decoration-none mx-5 my-2">
+        <CiCircleChevRight className="me-2"/>
         Upcoming Events
       </Link>
       <Link href="/pastEvents" className="text-white text-decoration-none mx-5 my-2">
+      <IoTimeOutline className="me-2"/>
         Past Events
       </Link>
     </div>
@@ -145,7 +157,7 @@ const SideBar = () => {
             event !== null ? "active-bg" : ""
           }`}
         >
-          <CalendarMonthIcon className="me-2" />
+          <FaCalendar className="me-2 mt-1" />
           <p>Events</p>
         </div>
         <div>{event}</div>

@@ -53,10 +53,10 @@ const SideBar = () => {
               <h3 className="text-center">WeAreNocturnal</h3>
               <p className="text-center mb-4">events@wearenocturnal.com</p>
               <div className="d-flex flex-column">
-                <Link href = "/" className="mb-4 text-decoration-none text-black">
+                <a className="mb-4 text-decoration-none text-black"  data-toggle="modal" data-target="#exampleModalCenter">
                   <GoArrowSwitch className="me-2"/>
                   Switch Account
-                </Link>
+                </a>
                 <Link href = "/" className="mb-4 text-decoration-none text-black">
                   <CiBellOn className="me-2"/>
                   What's New
@@ -172,6 +172,33 @@ const SideBar = () => {
         </div>
         <div>{account}</div>
       </Nav>
+      <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLongTitle">Switch Account</h5>
+              <button type="button" className="close border-0" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body" style={{ maxHeight: '500px', overflowY: 'auto' }}>
+        <div className="d-flex align-items-center">
+        <h6 className="m-3 mt-0">Team Member</h6>
+        </div>
+        <div className="d-flex justify-content-between">
+          <div className="d-flex align-items-center m-3 mt-0 mb-0" style={{ gap: '10px'}}>
+          <img src="/Color_DP.png"/>
+          <h5>WeAreNocturnal</h5>
+          </div>
+          <button type="button" class="btn btn-outline-primary">Corporate Plan</button>
+        </div>
+            </div>
+            <div className="modal-footer d-flex justify-content-start">
+              <a className="text-primary m-3 mt-0 mb-0" style={{ fontSize: '20px', textDecoration: 'none'}}>+ Add Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

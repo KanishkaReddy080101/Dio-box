@@ -53,7 +53,7 @@ const SideBar = () => {
               <h3 className="text-center">WeAreNocturnal</h3>
               <p className="text-center mb-4">events@wearenocturnal.com</p>
               <div className="d-flex flex-column">
-                <a className="mb-4 text-decoration-none text-black"  data-toggle="modal" data-target="#exampleModalCenter">
+                <a className="mb-4 text-decoration-none text-black"  data-toggle="modal" data-target="#exampleModalCenter2">
                   <GoArrowSwitch className="me-2"/>
                   Switch Account
                 </a>
@@ -172,7 +172,7 @@ const SideBar = () => {
         </div>
         <div>{account}</div>
       </Nav>
-      <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div className="modal fade" id="exampleModalCenter2" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
